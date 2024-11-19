@@ -1,0 +1,214 @@
+@import "normalize.css";
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.shead{
+    display:flex;
+}
+
+.head{
+    display:flex;
+}
+
+.toggle-button{
+    position: absolute;
+    top:28px;
+    right:20px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar{
+    height:4px;
+    width:100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.navbar{
+    margin-top:30px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:black;
+    margin-right:50px;
+}
+
+.Profile button{
+    position: relative;
+    bottom: 10px;
+    right:20px;
+    padding:5px 10px;
+    color:white;
+    height:35px;
+    width:80px;
+    border-radius: 40px;
+    cursor:pointer;
+    border-color: transparent;
+    background-color:#FF7223;    
+}
+
+.Profile{
+    display: flex;
+    align-items: baseline;
+}
+.Profile img{
+    margin-top:25px;
+    margin-right: 20px;
+}
+span.count{
+    background-color:#FF7223 ;
+    color:white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:21%;
+    right:12.5%;
+    border-radius: 30px;
+}
+
+@media (max-width:1435px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:12%;
+    }
+}
+@media (max-width:1395px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:11%;
+    }
+}
+@media (max-width:1285px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:10%;
+    }
+}
+@media (max-width:1190px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:9%;
+    }
+}
+@media (max-width:1120px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:8%;
+    }
+}
+@media (max-width:1070px){
+    span.count{
+        position: absolute;
+        top:21%;
+        right:7%;
+    }
+}
+@media (max-width:1020px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .navigation__link{
+        padding: 22px 13px;
+        line-height: 1;
+    }
+    .navigation__link:hover{
+        background-color: rgb(227, 227, 227);
+    }
+    .shead h1{
+        font-size: 30px;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    span.count{
+        position: absolute;
+        top:350px;
+        left:13%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2px;
+    }
+    .head{
+        display: none;
+        height:50vh;
+        background-color: whitesmoke;
+    }
+    .head:nth-child(n+2){
+        flex-direction: column;
+    }
+    .head.active{
+        display: flex;
+    }
+    .Profile{
+        margin: 10px 30px;
+    }
+}
+@media (max-width:730px) {
+    span.count{
+        position: absolute;
+        top:350px;
+        left:18%;
+    }
+}
+
+@media (max-width:565px) {
+    .shead h1{
+        font-size: 6vw;
+        margin-top: 25px;
+    }
+    span.count{
+        position: absolute;
+        top:350px;
+        left:23.5%;
+    }
+}
+@media (max-width:450px) {
+    span.count{
+        position: absolute;
+        top:350px;
+        left:30%;
+    }
+}
+@media (max-width:385px) {
+    span.count{
+        position: absolute;
+        top:350px;
+        left:35%;
+    }
+}
+
+

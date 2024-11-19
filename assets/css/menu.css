@@ -1,0 +1,219 @@
+@import "header.css";
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+body{
+    overflow-x: hidden;
+}
+
+.toggle-button{
+    position: absolute;
+    top:28px;
+    right:20px;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width:30px;
+    height:21px;
+}
+
+.toggle-button .bar{
+    height:4px;
+    width:100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.he{
+    text-align: center;
+    margin:50px;  
+    background-color: #5cb748;
+    color: white;
+    width:100%;
+    position: relative;
+    right:50px;  
+}
+
+.menu{
+    background-color: rgb(244, 244, 244);
+    display:flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: Black;
+    margin: 5px 20px; 
+    padding: 10px;
+}
+
+.menu a:hover{
+    border-bottom:2px solid #FF7223;
+    color: black;
+}
+
+.menu a.all{
+    border-bottom:2px solid #FF7223;
+    color: black;
+}
+
+.menu a.break{
+    border-bottom:2px solid #FF7223;
+    color: black;
+}
+
+.menu a.lunch{
+    border-bottom:2px solid #FF7223;
+    color: black;
+}
+
+.menu a.dinner{
+    border-bottom:2px solid #FF7223;
+    color: black;
+}
+
+.top{
+    display:flex;
+    justify-content: center;
+    margin-bottom:50px;
+}
+
+.food{
+    margin:20px;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 100px;
+    grid-auto-flow: dense;
+    margin:10px 80px 60px 80px;
+    place-items: center;  
+}
+
+.box{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor:pointer;
+}
+
+.box:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 20px;
+    transform: scale(1.05);
+}
+
+.box img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.border{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    width: 200px;
+}
+
+.border h4{
+    margin: 0;
+    text-align: center;
+}
+
+.info_box{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;    
+}
+
+.info{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.info p{
+    font-size: 13.5px; 
+}
+
+.price{
+    padding-top: 10px;
+    height: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price button{
+    background-color:orange;
+    border-color: transparent;
+    cursor:pointer;
+    border-radius: 20px;
+    font-size: 13px;
+    height:30px;
+    width:90px;
+}
+
+.price button:hover{
+    background-color:orange;
+    color: white;
+    transform: scale(1.05);
+}
+
+.gif{
+    width: 200px;
+    position: relative;
+    top: 20px;
+    animation-duration: 6s;
+    animation-name: running_scooty;
+    animation-iteration-count: infinite;
+    margin-top: -30px;
+}
+
+@keyframes running_scooty{
+    0% {
+        left: calc(0% - 100px);
+    }
+    
+    100% {
+        left: calc(100%);
+    }
+}
+
+@media (max-width:1020px){
+    body{
+        overflow-x: hidden;
+    }
+    .toggle-button{
+        display: flex;
+    }
+}
+
+@media (max-width:500px){
+    .top{
+        font-size: 3.5vw;        
+    }
+    .menu a{
+        padding: 5px;
+    }
+    .foot{
+        font-size: 13px;
+    }
+}
