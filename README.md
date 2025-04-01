@@ -1,15 +1,4 @@
-# inbalokesh.esakkipandi__web_project
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fssa-batch3_inbalokesh.esakkipandi__web_project&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fssa-batch3_inbalokesh.esakkipandi__web_project)
-
-
-
-PROBLEM STATEMENT -  https://docs.google.com/document/d/19wvSyEjhBu3xp5E8nq7kMPUMXhduhfyA/edit
-
-FLOW CHART - https://drive.google.com/file/d/1PP1BrD-9yDyZgIWO9qBMWlsvC7-v7-kY/view?usp=sharing
-
-LOW FIDELITY - https://docs.google.com/document/d/1UDu2AEF0KWBcD3FHCd2NA6LUcekOamRE39dwJAdSUIM/edit
-
-
+# Saran Selvaraj OHF
 FEATURES:
 
 1) User-crud 
